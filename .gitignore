@@ -1,0 +1,20 @@
+# Python cache files
+__pycache__/
+*.py[cod]
+
+# Molecular Dynamics files (Topologies and Trajectories)
+*.prmtop
+*.parm7
+*.dcd
+*.nc
+*.netcdf
+*.coord
+*.trr
+*.xtc
+
+# Output formats (Restarts, PDBs, etc.)
+*.rst
+*.rst7
+*.inpcrd
+*.pdb
+*.gro
