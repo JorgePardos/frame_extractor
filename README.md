@@ -14,12 +14,13 @@ TOPOLOGY_FILE = 'USER_TOPOLOGY.prmtop'
 INPUT_TRAJECTORY = 'USER_TRAJECTORY.dcd'
 OUTPUT_FILE = 'USER_OUTPUT.EXTENSION' 
   
-    # The script automatically detects what to do based on the output extension:
-    # - Trajectories (.dcd, .nc, .coord, .xtc, .trr): Extracts a range of frames.
-    # - Single frames (.rst, .rst7, .pdb, .inpcrd): Extracts ONLY the START_FRAME.
+The script automatically detects what to do based on the output extension:
+- Trajectories (.dcd, .nc, .coord, .xtc, .trr): Extracts a range of frames.
+- Single frames (.rst, .rst7, .pdb, .inpcrd): Extracts ONLY the START_FRAME.
+Frames setup (1-based indexing, exactly like cpptraj)
 
-    # Frames setup (1-based indexing, exactly like cpptraj)
-# NOTE: If exporting a single frame, ONLY 'START_FRAME' is used as the target.
+## NOTE: If exporting a single frame, ONLY 'START_FRAME' is used as the target.
+
 START_FRAME = INITIAL_FRAME 
 END_FRAME = LAST_FRAME
 STEP = 1
