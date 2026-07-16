@@ -13,6 +13,7 @@ Open the frame_extractor.py file with your favorite text editor and modify only 
 TOPOLOGY_FILE = 'USER_TOPOLOGY.prmtop'
 INPUT_TRAJECTORY = 'USER_TRAJECTORY.dcd'
 OUTPUT_FILE = 'USER_OUTPUT.EXTENSION' 
+  
     # The script automatically detects what to do based on the output extension:
     # - Trajectories (.dcd, .nc, .coord, .xtc, .trr): Extracts a range of frames.
     # - Single frames (.rst, .rst7, .pdb, .inpcrd): Extracts ONLY the START_FRAME.
